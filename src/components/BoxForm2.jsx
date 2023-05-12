@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
 
-const BoxForm2 = () => {
+const BoxForm2 = (props) => {
     const [inputColor, setInputColor] = useState("");
     const [inputWidth, setInputWidth] = useState();
     const [inputHeight, setInputHeight] = useState();
