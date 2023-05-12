@@ -3,14 +3,14 @@ import style from "./style.module.css";
 
 let boxArr = [];
 const BoxForm = (props) => {
-  const [box, setBox] = useState("");
+  const [boxColor, setBoxColor] = useState("");
 
   const createBox = (e) => {
     e.preventDefault();
-    boxArr.push(box);
+    boxArr.push(boxColor);
     console.log(boxArr);
 
-    setBox("");
+    setBoxColor("");
   };
 
   return (
@@ -21,8 +21,9 @@ const BoxForm = (props) => {
           <input
             type="text"
             className="form-control"
-            value={box}
-            onChange={(e) => setBox(e.target.value)}
+            required="required"
+            value={boxColor}
+            onChange={(e) => setBoxColor(e.target.value)}
           />
           <input type="submit" value="Add" />
         </form>

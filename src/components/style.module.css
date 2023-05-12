@@ -1,5 +1,11 @@
 .boxStyle {
-  width: 100px;
-  height: 100px;
-  /* color: aquamarine; */
+    margin: 10px;
+}
+
+.message {
+    color: #ea4a26;
+}
+
+input {
+    margin: 2px auto 20px;
 }
