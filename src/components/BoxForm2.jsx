@@ -11,7 +11,7 @@ const BoxForm2 = (props) => {
         e.preventDefault();
         const setStyle = {
             backgroundColor: inputColor,
-            width: `${inputHeight}px`,
+            width: `${inputWidth}px`,
             height: `${inputHeight}px`,
         };
         setBoxList([...boxList, setStyle]);
